@@ -1,4 +1,4 @@
-package com.bankupayment;
+package com.bolivariano.tarfias;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
