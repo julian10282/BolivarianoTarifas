@@ -1,4 +1,4 @@
-package com.bankupayment.services;
+package com.bolivariano.tarifas.services;
 
 import java.util.Date;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.bankupayment.entities.TransationEntity;
-import com.bankupayment.repository.TransactionRepository;
+import com.bolivariano.tarifas.entities.TransationEntity;
+import com.bolivariano.tarifas.repository.TransactionRepository;
 
 @Service("transactionService")
 public class TransactionService {

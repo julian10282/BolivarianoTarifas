@@ -1,4 +1,4 @@
-package com.bankupayment.enumerator;
+package com.bolivariano.tarifas.enumerator;
 
 public enum PaymentTypeEnum {
 

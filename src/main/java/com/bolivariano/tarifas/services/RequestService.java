@@ -1,4 +1,4 @@
-package com.bankupayment.services;
+package com.bolivariano.tarifas.services;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.bankupayment.integration.RestProxy;
+import com.bolivariano.tarifas.integration.RestProxy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

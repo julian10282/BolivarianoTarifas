@@ -1,4 +1,4 @@
-package com.bankupayment.controllers;
+package com.bolivariano.tarifas.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bankupayment.entities.PaymentEntity;
-import com.bankupayment.services.PaymentService;
+import com.bolivariano.tarifas.entities.PaymentEntity;
+import com.bolivariano.tarifas.services.PaymentService;
 
 @RestController
 @RequestMapping("/payment")

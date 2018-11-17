@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/db_payment?useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/tarifas?useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: root
   jpa:
@@ -9,7 +9,7 @@ spring:
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-#      ddl-auto: update
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect

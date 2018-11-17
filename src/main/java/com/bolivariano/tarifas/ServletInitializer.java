@@ -1,4 +1,4 @@
-package com.bankupayment;
+package com.bolivariano.tarifas;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

@@ -1,4 +1,4 @@
-package com.bankupayment.services;
+package com.bolivariano.tarifas.services;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,11 +10,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.bankupayment.entities.PaymentEntity;
-import com.bankupayment.entities.TransationEntity;
-import com.bankupayment.enumerator.PaymentTypeEnum;
-import com.bankupayment.enumerator.StatusEnum;
-import com.bankupayment.repository.PaymentRepository;
+import com.bolivariano.tarifas.entities.PaymentEntity;
+import com.bolivariano.tarifas.entities.TransationEntity;
+import com.bolivariano.tarifas.enumerator.PaymentTypeEnum;
+import com.bolivariano.tarifas.enumerator.StatusEnum;
+import com.bolivariano.tarifas.repository.PaymentRepository;
 
 @Service("paymentService")
 public class PaymentService {

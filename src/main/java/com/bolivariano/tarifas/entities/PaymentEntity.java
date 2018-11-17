@@ -1,4 +1,4 @@
-package com.bankupayment.entities;
+package com.bolivariano.tarifas.entities;
 
 import java.util.Date;
 import java.util.List;

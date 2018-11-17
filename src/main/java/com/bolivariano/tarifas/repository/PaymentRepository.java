@@ -1,9 +1,9 @@
-package com.bankupayment.repository;
+package com.bolivariano.tarifas.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.bankupayment.entities.PaymentEntity;
+import com.bolivariano.tarifas.entities.PaymentEntity;
 
 import java.io.Serializable;
 import java.util.Date;

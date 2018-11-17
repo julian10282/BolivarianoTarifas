@@ -1,4 +1,4 @@
-package com.bankupayment.integration;
+package com.bolivariano.tarifas.integration;
 
 import java.io.BufferedReader;
 import java.io.IOException;

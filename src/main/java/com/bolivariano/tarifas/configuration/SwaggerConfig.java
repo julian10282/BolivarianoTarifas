@@ -1,4 +1,4 @@
-package com.bankupayment.configuration;
+package com.bolivariano.tarifas.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

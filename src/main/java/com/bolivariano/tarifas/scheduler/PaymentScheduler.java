@@ -1,4 +1,4 @@
-package com.bankupayment.scheduler;
+package com.bolivariano.tarifas.scheduler;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -14,8 +14,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import com.bankupayment.entities.PaymentEntity;
-import com.bankupayment.services.PaymentService;
+import com.bolivariano.tarifas.entities.PaymentEntity;
+import com.bolivariano.tarifas.services.PaymentService;
 
 @Component
 public class PaymentScheduler {
