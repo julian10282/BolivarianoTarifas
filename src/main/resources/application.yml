@@ -1,7 +1,7 @@
 spring:
   datasource:
     jndi-name: jdbc/BolivarianoDS
-#    url: jdbc:mysql://localhost:3306/tarifas?useSSL=false
+#    url: jdbc:mysql://181.49.114.18:3306/tarifas?useSSL=false
 #    username: root
 #    password: root
   jpa:
@@ -15,4 +15,9 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
 application: 
-  topic-name: jms/TopicBolivariano
+  topic-name: bolivariano.tarifas
+  rabbit:
+#    addresses: 181.49.114.18:5672
+    addresses: localhost:5672
+    user: bolivariano
+    pass: bolivariano

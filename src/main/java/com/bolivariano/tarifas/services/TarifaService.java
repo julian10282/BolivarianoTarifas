@@ -13,6 +13,8 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 
 import com.bolivariano.tarifas.entities.TarifaEntity;
+import com.bolivariano.tarifas.integration.JMSUtils;
+import com.bolivariano.tarifas.integration.MessagePublisher;
 import com.bolivariano.tarifas.modelos.Tarifa;
 import com.bolivariano.tarifas.repository.TarifaRepository;
 
@@ -28,6 +30,14 @@ public class TarifaService {
 	
 	@Autowired 
 	private JmsTemplate jmsTemplate;
+	
+	@Autowired
+	@Qualifier("jmsutils")
+	private JMSUtils jmsUtils;
+	
+	@Autowired
+	@Qualifier("messagePublisher")
+	MessagePublisher publisher;
 	
 	public ResponseEntity<Object> crear(Tarifa tarifa) {
 		try {
@@ -72,7 +82,10 @@ public class TarifaService {
 				Tarifa tarifa2 = entityToModel(tarifaEntity3);
 				
 				System.out.println("Nombre topico: " + topicName);
-				jmsTemplate.convertAndSend(topicName, tarifa2);
+				// jmsTemplate.convertAndSend(topicName, tarifa2);
+				// jmsUtils.sendMessage(tarifa2);
+				
+				publisher.sendNewMessage(tarifa2, topicName);
 				
 				return new ResponseEntity<>(tarifa2, HttpStatus.OK);
 			}
